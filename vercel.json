@@ -1,17 +1,21 @@
 {
     "version": 2,
-      "framework": null,
+    "builds": [
+        {
+            "src": "build.sh",
+            "use": "@vercel/static-build",
+            "config": {
+                "distDir": "public"
+            }
+        }
+    ],
     "functions": {
         "api/index.php": { "runtime": "vercel-php@0.6.0" }
     },
-    "routes": [{
-        "src": "/(.*)",
-        "dest": "/api/index.php"
-    }],
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
-        "APP_URL": "chat-laravel-nnf1ittl8-ronit-zinzuvadiya-s-projects.vercel.app",
+        "APP_URL": "https://chat-laravel-oqukw3vji-ronit-zinzuvadiya-s-projects.vercel.app/",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
