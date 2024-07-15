@@ -1,4 +1,5 @@
 {
+    "name" : "chat-laravel-app",
     "private": true,
     "type": "module",
     "scripts": {
