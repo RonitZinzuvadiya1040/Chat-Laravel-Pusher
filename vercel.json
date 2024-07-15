@@ -7,14 +7,21 @@
             "config": {
                 "distDir": "public"
             }
+        },
+        {
+            "src": "api/index.php",
+            "use": "@vercel/php"
         }
     ],
-    "functions": {
-        "api/index.php": { "runtime": "vercel-php@0.6.0" }
-    },
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.php"
+        }
+    ],
     "env": {
         "APP_ENV": "production",
-        "APP_DEBUG": "true",
+        "APP_DEBUG": "false",
         "APP_URL": "https://chat-laravel-oqukw3vji-ronit-zinzuvadiya-s-projects.vercel.app/",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
