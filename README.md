@@ -69,7 +69,7 @@ Copy `.env.example` and name `.env` and populate the following API keys
 
 ## CSS
 
-Copy style css from the live system
+Copy style css from the live system and paste it in `public/style.css`
 
 - `https://chat.laravel.pusher.edlin.app/style.css`
 
